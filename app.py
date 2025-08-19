@@ -3,9 +3,9 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def home():
 if request.method == 'POST':
-print("Form submitted successfully!")
+print("Submitted form successfully!")
 print("Form Data:", request.form)
-return "Registration successful!"
+return "Registration successfull!"
 return render_template('register.html')
 if __name__ == '__main__':
 app.run(debug=True)
